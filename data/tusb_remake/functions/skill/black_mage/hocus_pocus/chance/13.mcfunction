@@ -6,4 +6,4 @@
 ### １３
 me 達は見慣れないスターを拾った。
 effect give @a[distance=..15] minecraft:resistance 30 4 false
-effect give @e[distance=..15,type=#tusb_remake:mob] minecraft:resistance 30 4 false
+effect give @e[distance=..15,type=#tusb_remake:mob_and_player] minecraft:resistance 30 4 false

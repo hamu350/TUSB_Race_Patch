@@ -6,4 +6,4 @@
 ### チャンス５
 # me 達は翼を失った。
 me 達は飛ぶ鳥を落とす勢いだ！
-execute as @e[distance=..15,type=#tusb_remake:mob,tag=Enemy] at @s run function tusb_remake:skill/archer/bird_strike/hit/
+execute as @e[distance=..15,type=#tusb_remake:mob_and_player,tag=Enemy] at @s run function tusb_remake:skill/archer/bird_strike/hit/
