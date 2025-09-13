@@ -21,6 +21,6 @@ execute rotated as 0-0-1-0-1 rotated ~270 ~ positioned ^ ^ ^5 run particle minec
 
 
 scoreboard players operation _ KasapLevel = @s KasapLevel
-execute as @e[distance=..5,type=#tusb_remake:mob_and_player,tag=Enemy,tag=!InKasap,sort=random,limit=3] run function tusb_remake:skill/archer/kasap_trap/schedule/apply
+execute as @e[distance=..5,type=#tusb_remake:mob,tag=Enemy,tag=!InKasap,sort=random,limit=3] run function tusb_remake:skill/archer/kasap_trap/schedule/apply
 
 data modify storage tusb_remake: _ set value true

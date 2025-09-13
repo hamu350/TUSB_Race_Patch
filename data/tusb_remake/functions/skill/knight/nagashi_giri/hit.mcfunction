@@ -10,4 +10,4 @@ scoreboard players operation @s MPConsumption = @s CurrentModeCost
 function tusb_remake:skill/check_mp/
 
 scoreboard players operation _ ActivatedSkill = @s ActivatedSkill
-execute if score _ ActivatedSkill matches 1200..1209 as @e[distance=..5,type=#tusb_remake:mob_and_player,tag=Enemy,nbt={HurtTime:10s},sort=nearest,limit=1] at @s run function tusb_remake:skill/knight/nagashi_giri/apply
+execute if score _ ActivatedSkill matches 1200..1209 as @e[distance=..5,type=#tusb_remake:mob,tag=Enemy,nbt={HurtTime:10s},sort=nearest,limit=1] at @s run function tusb_remake:skill/knight/nagashi_giri/apply

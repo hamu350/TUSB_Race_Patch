@@ -18,6 +18,6 @@ scoreboard players operation _ PotentialSkill %= _ TUSB
 ### 演出を出すのは10体まで
 data modify storage tusb_remake: chain_arrow_count set value 10
 ### チェインアローのレベルに応じて呼び出し
-execute if score _ PotentialSkill matches 0 as @e[distance=..5,type=#tusb_remake:mob_and_player,tag=Enemy,sort=random] at @s run function tusb_remake:skill/archer/chain_arrow/hit/damage
-execute if score _ PotentialSkill matches 1 as @e[distance=..15,type=#tusb_remake:mob_and_player,tag=Enemy,sort=random] at @s run function tusb_remake:skill/archer/chain_arrow/hit/damage
-execute if score _ PotentialSkill matches 2..9 as @e[distance=..25,type=#tusb_remake:mob_and_player,tag=Enemy,sort=random] at @s run function tusb_remake:skill/archer/chain_arrow/hit/damage
+execute if score _ PotentialSkill matches 0 as @e[distance=..5,type=#tusb_remake:mob,tag=Enemy,sort=random] at @s run function tusb_remake:skill/archer/chain_arrow/hit/damage
+execute if score _ PotentialSkill matches 1 as @e[distance=..15,type=#tusb_remake:mob,tag=Enemy,sort=random] at @s run function tusb_remake:skill/archer/chain_arrow/hit/damage
+execute if score _ PotentialSkill matches 2..9 as @e[distance=..25,type=#tusb_remake:mob,tag=Enemy,sort=random] at @s run function tusb_remake:skill/archer/chain_arrow/hit/damage

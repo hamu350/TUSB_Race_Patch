@@ -6,4 +6,4 @@
 ### １
 me 達は黒い霧に包まれた。
 effect clear @a[distance=..15]
-effect clear @e[distance=..15,type=#tusb_remake:mob_and_player]
+effect clear @e[distance=..15,type=#tusb_remake:mob]

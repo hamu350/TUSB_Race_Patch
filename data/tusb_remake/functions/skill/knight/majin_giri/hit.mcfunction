@@ -11,4 +11,4 @@ function tusb_remake:skill/check_mp/
 
 scoreboard players operation _ ActivatedSkill = @s ActivatedSkill
 execute if score _ ActivatedSkill matches 1240..1249 run effect give @s minecraft:mining_fatigue 2 127 true
-execute if score _ ActivatedSkill matches 1240..1249 as @e[distance=..5,type=#tusb_remake:mob_and_player,tag=Enemy,nbt={HurtTime:10s},sort=nearest,limit=1] at @s run function tusb_remake:skill/knight/majin_giri/apply
+execute if score _ ActivatedSkill matches 1240..1249 as @e[distance=..5,type=#tusb_remake:mob,tag=Enemy,nbt={HurtTime:10s},sort=nearest,limit=1] at @s run function tusb_remake:skill/knight/majin_giri/apply
