@@ -217,7 +217,6 @@ scoreboard objectives add IronWill dummy "ノックバック軽減機会ポイ�
 scoreboard objectives add NinjaTime dummy "連舞・跳躍効果時間"
 scoreboard objectives add Tsuremai dummy "連舞レベル"
 scoreboard objectives add Choyaku dummy "跳躍レベル"
-scoreboard objectives add Isukumi dummy "居縮タイマー"
 scoreboard objectives add KasapLevel dummy "ルカナンレベル"
 scoreboard objectives add KasapTimer dummy "ルカナンタイマー"
 scoreboard objectives add Kazakiri dummy "風切効果時間"
@@ -252,8 +251,8 @@ scoreboard objectives add RadarVision dummy "レーダーヴィジョン効果�
 scoreboard objectives add ProjectileSkill dummy "投擲物に付与したスキルとレベル"
 scoreboard objectives add PotentialSkill dummy "Mobに発動する可能性のあるスキル"
 
-# プレイヤーID
-scoreboard objectives add PlayerId dummy
+### 追加： 追加スコアボード
+scoreboard objectives add RacePoint dummy "レースポイント"
 
 # メニュートリガースコア
 scoreboard objectives add _ dummy {"text":"一時変数"}
@@ -263,56 +262,22 @@ scoreboard objectives add SkillSetting trigger {"text": "スキル設定表示"}
 scoreboard objectives add SneakingTime minecraft.custom:sneak_time {"text":"スニーク時間"}
 scoreboard objectives add SneakFrequency dummy {"text":"スニーク頻度"}
 
-# 時間制限ボスバー
-scoreboard objectives add TimeLimit dummy {"text": "残り時間"}
-
-# 残り残機
-scoreboard objectives add Remaining dummy {"text": "残り残機"}
-
-# キルカウント
-scoreboard objectives add KillCount playerKillCount {"text": "キルカウント"}
-scoreboard objectives add PreKillCount dummy {"text":"前tickのキルカウント"}
-
-bossbar add tusb_pvp:time_limit "残り時間"
-bossbar set tusb_pvp:time_limit color white 
-bossbar set tusb_pvp:time_limit visible false
-
-# 開始時間
-scoreboard objectives add CountDown dummy {"text": "開始まで"}
-
-#勝利数
-scoreboard objectives add WinCount dummy {"text": "勝利数"}
+# 印判用代入スコア
+scoreboard objectives add TUSB_sub dummy
 
 ### チーム
-team add NormalTeam
-team modify NormalTeam color white
-team modify NormalTeam friendlyFire true
-team modify NormalTeam seeFriendlyInvisibles true
-team modify NormalTeam collisionRule never
-team modify NormalTeam deathMessageVisibility always
-team modify NormalTeam nametagVisibility always
+team add FriendlyTeam
+team modify FriendlyTeam friendlyFire false
+team modify FriendlyTeam seeFriendlyInvisibles true
+team modify FriendlyTeam collisionRule never
+team modify FriendlyTeam deathMessageVisibility always
+team modify FriendlyTeam deathMessageVisibility always
+team modify FriendlyTeam nametagVisibility always
 team add Yellow
 team modify Yellow color yellow
 team modify Yellow collisionRule never
 team add NoCollision
 team modify NoCollision collisionRule never
-team add RedTeam
-team modify RedTeam color red
-team modify RedTeam friendlyFire false
-team modify RedTeam seeFriendlyInvisibles true
-team modify RedTeam collisionRule never
-team modify RedTeam deathMessageVisibility always
-team modify RedTeam nametagVisibility always
-team add BlueTeam
-team modify BlueTeam color blue
-team modify BlueTeam friendlyFire false
-team modify BlueTeam seeFriendlyInvisibles true
-team modify BlueTeam collisionRule never
-team modify BlueTeam deathMessageVisibility always
-team modify BlueTeam nametagVisibility always
-
-#ステージ初期座標用ストレージ
-execute unless data storage tusb_pvp: StagePos run data modify storage tusb_pvp: StagePos set value [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
 
 ### ゲームルール / ワールド設定
 gamerule logAdminCommands false
@@ -323,24 +288,20 @@ gamerule naturalRegeneration false
 gamerule doEntityDrops true
 gamerule doFireTick true
 gamerule doMobLoot true
-gamerule doMobSpawning false
+gamerule doMobSpawning true
 gamerule doTileDrops true
-gamerule doInsomnia true
-gamerule doWardenSpawning true
-gamerule doTraderSpawning true
-gamerule doPatrolSpawning true
 gamerule doInsomnia false
 gamerule randomTickSpeed 3
 gamerule showDeathMessages true
 gamerule spawnRadius 0
 gamerule disableElytraMovementCheck true
-gamerule doTraderSpawning true
 difficulty hard
 defaultgamemode adventure
 worldborder center 0 0
 worldborder set 7000
 
 ### setdisplay
+scoreboard objectives setdisplay list RacePoint
 scoreboard objectives setdisplay sidebar MP
 scoreboard objectives setdisplay belowName HP
 
