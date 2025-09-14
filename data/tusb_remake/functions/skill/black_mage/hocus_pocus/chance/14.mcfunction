@@ -5,4 +5,4 @@
 
 ### １４
 me の魔法はイオナズンになった！
-kill @e[distance=..15,type=#tusb_remake:mob,tag=Enemy]
+kill @e[distance=..15,tag=!This,tag=!Owner,type=#tusb_remake:mob,tag=Enemy]

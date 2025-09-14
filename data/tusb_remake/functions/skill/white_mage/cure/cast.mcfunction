@@ -5,5 +5,4 @@
 
 playsound entity.experience_orb.pickup master @a[distance=..16] ~ ~ ~ 1 2 0
 
-execute unless predicate tusb_remake:is_sneaking run function tusb_remake:skill/white_mage/cure/apply
-execute if predicate tusb_remake:is_sneaking as @a[distance=..10] at @s run function tusb_remake:skill/white_mage/cure/apply
+function tusb_remake:skill/white_mage/cure/apply

@@ -5,5 +5,9 @@
 
 playsound minecraft:entity.zombie.infect master @a[distance=..16] ~ ~ ~ 1 0.5 0
 
-execute unless predicate tusb_remake:is_sneaking run function tusb_remake:skill/ninja/katon/apply
+execute at @s as @e[predicate=tusb_remake:player] run function tusb_remake:skill/this
+
+function tusb_remake:skill/ninja/katon/apply
 execute if predicate tusb_remake:is_sneaking as @a[distance=..15] at @s run function tusb_remake:skill/ninja/katon/apply
+
+tag @e[tag=This] remove This

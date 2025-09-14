@@ -9,7 +9,7 @@ tellraw @a {"translate":"%1$sにルーラの効果がかかった。","color":"g
 playsound entity.illusioner.prepare_mirror master @a[distance=..10,gamemode=!spectator,scores={Job=1..}] ~ ~ ~ 1.5 0.5 1
 
 ### ルーラを設定
-tag @a[distance=..10,gamemode=!spectator,scores={Job=1..}] add Return
+tag @s[gamemode=!spectator,scores={Job=1..}] add Return
 
 ### 戻る時間を設定する
 execute store result score _ ReturnTimer run time query gametime

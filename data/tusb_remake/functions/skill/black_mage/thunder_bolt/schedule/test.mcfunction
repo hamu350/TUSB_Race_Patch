@@ -8,8 +8,12 @@ execute if score @s ActivatedSkill matches 5220 run data modify storage score_da
 execute if score @s ActivatedSkill matches 5221 run data modify storage score_damage: Argument set value {Damage:250.00,DamageType:"Projectile"}
 execute if score @s ActivatedSkill matches 5222..5229 run data modify storage score_damage: Argument set value {Damage:400.00,DamageType:"Projectile"}
 
+execute on origin at @s as @e[predicate=tusb_remake:player] run function tusb_remake:skill/owner
+
 ### 水の有無によって範囲が変わる
 execute if score @s TUSB = _ TUSB if entity @s[nbt={Fire:0s}] run function tusb_remake:skill/black_mage/thunder_bolt/schedule/invoke/all
 execute if score @s TUSB = _ TUSB unless entity @s[nbt={Fire:0s}] run function tusb_remake:skill/black_mage/thunder_bolt/schedule/invoke/single
+
+tag @e[tag=Owner] remove Owner
 
 kill @s

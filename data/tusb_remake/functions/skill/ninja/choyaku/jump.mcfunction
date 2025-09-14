@@ -10,6 +10,10 @@ execute if score @s Choyaku matches 2..7 run data modify storage score_damage: A
 execute if score @s Choyaku matches 8..12 run data modify storage score_damage: Argument set value {Damage:35.00,DamageType:"Projectile"}
 execute if score @s Choyaku matches 13.. run data modify storage score_damage: Argument set value {Damage:65.00,DamageType:"Projectile"}
 
-execute if score @s Choyaku matches 2..7 as @e[distance=..3,type=#tusb_remake:mob,tag=Enemy] run function score_damage:api/attack
-execute if score @s Choyaku matches 8..12 as @e[distance=..6,type=#tusb_remake:mob,tag=Enemy] run function score_damage:api/attack
-execute if score @s Choyaku matches 13.. as @e[distance=..9,type=#tusb_remake:mob,tag=Enemy] run function score_damage:api/attack
+execute at @s as @e[predicate=tusb_remake:player] run function tusb_remake:skill/this
+
+execute if score @s Choyaku matches 2..7 as @e[distance=..3,tag=!This,tag=!Owner,type=#tusb_remake:mob_and_player,tag=Enemy] run function score_damage:api/attack
+execute if score @s Choyaku matches 8..12 as @e[distance=..6,tag=!This,tag=!Owner,type=#tusb_remake:mob_and_player,tag=Enemy] run function score_damage:api/attack
+execute if score @s Choyaku matches 13.. as @e[distance=..9,tag=!This,tag=!Owner,type=#tusb_remake:mob_and_player,tag=Enemy] run function score_damage:api/attack
+
+tag @e[tag=This] remove This

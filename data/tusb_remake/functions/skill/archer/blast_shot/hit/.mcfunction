@@ -12,5 +12,5 @@ execute if score _ PotentialSkill matches 3230 run data modify storage score_dam
 execute if score _ PotentialSkill matches 3231..3239 run data modify storage score_damage: Argument set value {Damage:45.00,DamageType:"Blast"}
 
 ### ブラストショットのレベルに応じて呼び出し
-execute if score _ PotentialSkill matches 3230 as @e[distance=..3,type=#tusb_remake:mob,tag=Enemy] run function tusb_remake:skill/archer/blast_shot/hit/damage1
-execute if score _ PotentialSkill matches 3231..3239 as @e[distance=..6,type=#tusb_remake:mob,tag=Enemy] run function tusb_remake:skill/archer/blast_shot/hit/damage2
+execute if score _ PotentialSkill matches 3230 as @e[distance=..3,tag=!This,tag=!Owner,type=#tusb_remake:mob_and_player,tag=Enemy] run function tusb_remake:skill/archer/blast_shot/hit/damage1
+execute if score _ PotentialSkill matches 3231..3239 as @e[distance=..6,tag=!This,tag=!Owner,type=#tusb_remake:mob_and_player,tag=Enemy] run function tusb_remake:skill/archer/blast_shot/hit/damage2

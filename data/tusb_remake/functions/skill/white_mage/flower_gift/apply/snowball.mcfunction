@@ -5,6 +5,8 @@
 
 data modify entity @s Tags set value [FlowerGift,FlyingObject,Driftable,TypeChecked]
 
+scoreboard players operation @s PlayerId = _ PlayerId
+
 execute if score _ ActivatedSkill matches 4220 run tag @s add FlowerGift1
 execute if score _ ActivatedSkill matches 4221 run tag @s add FlowerGift2
 execute if score _ ActivatedSkill matches 4222..4229 run tag @s add FlowerGift3

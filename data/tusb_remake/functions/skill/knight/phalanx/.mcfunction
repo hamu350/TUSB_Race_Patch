@@ -5,6 +5,9 @@
 
 playsound minecraft:block.anvil.use master @a[distance=..16] ~ ~ ~ 1 1.4 0
 
+execute at @s as @e[predicate=tusb_remake:player] run function tusb_remake:skill/this
+
 scoreboard players operation _ ActivatedSkill = @s ActivatedSkill
-execute unless predicate tusb_remake:is_sneaking run function tusb_remake:skill/knight/phalanx/apply
-execute if predicate tusb_remake:is_sneaking as @a[distance=..15] at @s run function tusb_remake:skill/knight/phalanx/apply
+function tusb_remake:skill/knight/phalanx/apply
+
+tag @e[tag=This] remove This
