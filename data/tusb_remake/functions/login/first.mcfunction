@@ -26,5 +26,6 @@ data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].tusb_race.setti
 # 追加： tellraw
 tellraw @s {"translate": "TUSB_RPへようこそ！"}
 tellraw @s {"translate": "職業島でスタートボタンを押すと、ゲームが開始されます。"}
+tellraw @s {"translate": "島攻略や相手プレイヤーが倒れると得られるレースポイントを一番多く集めた人が勝利となります。"}
 tellraw @s {"translate": "ゲーム開始後、クラウディア村人像前にてゲームを終了することができます。"}
 tellraw @s {"translate": "※MPが経験値バーになりました。サイドバーにはレースポイントが表示されます。","color": "green"}
