@@ -44,5 +44,5 @@ execute in minecraft:overworld if block 3 77 87 minecraft:end_portal_frame[eye=t
 ### 交易島だった場合、祈りを解禁
 execute in minecraft:overworld if block -70 15 32 minecraft:end_portal_frame[eye=true] run function tusb_remake:area/conquer/traders_island
 
-# 追加： アイはめた人にカウントアップと報酬
-scoreboard players add @s RacePoint 10
+# 追加： アイはめた人はポイントげっちゅ
+scoreboard players add @s RacePoint 5

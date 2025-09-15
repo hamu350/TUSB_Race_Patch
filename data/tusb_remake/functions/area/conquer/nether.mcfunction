@@ -5,3 +5,6 @@
 
 execute store result score _ UseEnderEye run data get storage tusb_remake: conquer.count.nether
 execute store result storage tusb_remake: conquer.count.nether int 1 run scoreboard players add _ UseEnderEye 1
+
+# 追加： アイはめた人は追加ポイントげっちゅ
+scoreboard players add @s RacePoint 5
