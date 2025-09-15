@@ -253,6 +253,7 @@ scoreboard objectives add PotentialSkill dummy "Mobに発動する可能性の�
 
 ### 追加： 追加スコアボード
 scoreboard objectives add RacePoint dummy "レースポイント"
+scoreboard objectives add Rank dummy "順位"
 
 # メニュートリガースコア
 scoreboard objectives add _ dummy {"text":"一時変数"}
@@ -301,9 +302,7 @@ worldborder center 0 0
 worldborder set 7000
 
 ### setdisplay
-scoreboard objectives setdisplay list RacePoint
-scoreboard objectives setdisplay sidebar MP
-scoreboard objectives setdisplay belowName HP
+scoreboard objectives setdisplay sidebar RacePoint
 
 ### ブロックに対する設定を予約
 execute in minecraft:overworld run schedule function tusb_remake:load/block_settings 3s

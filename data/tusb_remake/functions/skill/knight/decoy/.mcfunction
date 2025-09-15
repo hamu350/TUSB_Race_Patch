@@ -5,8 +5,8 @@
 
 execute at @s as @e[predicate=tusb_remake:player] run function tusb_remake:skill/this
 
-execute if score @s ActivatedSkill matches 1030 as @e[distance=..15,tag=!This,tag=!Owner,type=#tusb_remake:mob_and_player,tag=Enemy] run function tusb_remake:skill/knight/decoy/tp
-execute if score @s ActivatedSkill matches 1031..1039 as @e[distance=..25,tag=!This,tag=!Owner,type=#tusb_remake:mob_and_player,tag=Enemy] run function tusb_remake:skill/knight/decoy/tp
+execute if score @s ActivatedSkill matches 1030 as @e[distance=..15,tag=!This,tag=!Owner,type=#tusb_remake:mob,tag=Enemy] run function tusb_remake:skill/knight/decoy/tp
+execute if score @s ActivatedSkill matches 1031..1039 as @e[distance=..25,tag=!This,tag=!Owner,type=#tusb_remake:mob,tag=Enemy] run function tusb_remake:skill/knight/decoy/tp
 
 tag @e[tag=This] remove This
 

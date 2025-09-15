@@ -12,4 +12,3 @@ function tusb_race:player/display/show_menu
 # スコアリセット
 scoreboard players reset @s ChangeSkillSet
 scoreboard players enable @s ChangeSkillSet
-scoreboard players enable @s SkillSetting

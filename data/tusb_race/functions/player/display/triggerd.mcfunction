@@ -1,4 +1,4 @@
-#> tusb_race:trigger/triggerd
+#> tusb_race:player/display/triggerd
 #
 #
 

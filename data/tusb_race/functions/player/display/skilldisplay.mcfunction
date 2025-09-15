@@ -15,4 +15,3 @@ execute if score @s SkillSetting matches 10 run function tusb_remake:skill/displ
 # スコアリセット
 scoreboard players reset @s SkillSetting
 scoreboard players enable @s SkillSetting
-function tusb_race:player/display/show_menu

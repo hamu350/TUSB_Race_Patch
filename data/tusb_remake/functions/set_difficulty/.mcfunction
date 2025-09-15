@@ -11,6 +11,7 @@ scoreboard players operation Difficulty Settings *= Difficulty Settings
 execute store result score _ TUSB run data get storage tusb_remake: conquer.count.total 10000
 execute store result storage math: in int 0.01 run scoreboard players operation _ TUSB /= MaxPortalCount Settings
 execute store result score _ TUSB run data get storage math: in
+# 追加： 観光モードでも達成率反映
 scoreboard players operation Difficulty Settings += _ TUSB
 
 data modify storage tusb_remake: difficulty_modifier set value {speed:0,resistance:0}
