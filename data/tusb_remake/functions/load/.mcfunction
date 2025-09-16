@@ -263,9 +263,6 @@ scoreboard objectives add SkillSetting trigger {"text": "スキル設定表示"}
 scoreboard objectives add SneakingTime minecraft.custom:sneak_time {"text":"スニーク時間"}
 scoreboard objectives add SneakFrequency dummy {"text":"スニーク頻度"}
 
-# 印判用代入スコア
-scoreboard objectives add TUSB_sub dummy
-
 ### チーム
 team add FriendlyTeam
 team modify FriendlyTeam friendlyFire false
