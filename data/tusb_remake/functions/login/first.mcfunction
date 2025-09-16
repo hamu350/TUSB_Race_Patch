@@ -31,4 +31,6 @@ tellraw @s {"translate": "ゲーム開始後、クラウディア村人像前に
 tellraw @s {"translate": "※MPが経験値バーになりました。サイドバーにはポイントが表示されます。","color": "green"}
 tellraw @s {"translate": "-----------------------------------------------------"}
 tellraw @s {"translate": "ポイント変動条件","bold":true}
-tellraw @s {"translate": "通常世界島攻略+5 別ディメンション+10 死亡->他プレイヤーの数×-3,減った分だけ分配"}
+tellraw @s {"translate": "通常世界島攻略+5 別ディメンション+10 死亡->他プレイヤーの数×-3,他プレイヤーに+3"}
+
+effect give @s glowing infinite 127
