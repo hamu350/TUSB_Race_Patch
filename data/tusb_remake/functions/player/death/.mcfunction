@@ -20,10 +20,3 @@ tag @s[tag=Doom] remove Doom
 ### リレイズの効果がかかっていたらレイズをかける
 tag @s[tag=ReRaise] add CastRaise
 tag @s[tag=ReRaise] remove ReRaise
-
-# 追加： ゲームスタートしていて死亡したら専用処理
-execute if data storage tusb_race: settings{start:1b} run function tusb_race:player/death/
-
-effect give @s glowing infinite 127
-
-function tusb_race:player/mp_bar/set
