@@ -22,7 +22,7 @@ execute as @a[scores={Rank=0,RacePoint=0}] run scoreboard players set @s Rank 3
 
 execute as @a run scoreboard players operation @s RacePoint = @s TUSB 
 
-tellraw @a {"translate":"%1$sが1位になった！！！","with": [{"selector": "@a[scores={Rank=1}]"}]}
+tellraw @a {"translate":"%1$sが1位になった！！！","with": [{"selector": "@a[scores={Rank=1}]"}],"color": "gold"}
 tellraw @a {"translate":"%1$sが2位になった！！","with": [{"selector": "@a[scores={Rank=2}]"}]}
 tellraw @a {"translate":"%1$sが3位になった！","with": [{"selector": "@a[scores={Rank=3}]"}]}
 
