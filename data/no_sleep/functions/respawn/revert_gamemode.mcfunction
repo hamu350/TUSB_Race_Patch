@@ -13,7 +13,7 @@ execute if data storage no_sleep: {gamemode:"adventure"} run gamemode adventure 
 execute if data storage no_sleep: {gamemode:"spectator"} run gamemode spectator @s
 
 # 追加： 死亡処理
-effect give @s glowing infinite 127
+effect give @s glowing infinite 127 true
 
 function tusb_race:player/mp_bar/set
 
