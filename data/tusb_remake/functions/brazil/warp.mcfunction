@@ -21,6 +21,7 @@ execute if data storage tusb_race: settings{start:1b} if data storage oh_my_dat:
 execute if data storage tusb_race: settings{start:1b} if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].tusb_race.settings{spwanpoint:5} in minecraft:overworld run tp @s 24 18 -1827
 execute if data storage tusb_race: settings{start:1b} if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].tusb_race.settings{spwanpoint:6} in minecraft:the_nether run tp @s 0 26 20
 execute if data storage tusb_race: settings{start:1b} if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].tusb_race.settings{spwanpoint:7} in minecraft:overworld run tp @s 1317 212 1561
+execute if data storage tusb_race: settings{start:1b} if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].tusb_race.settings{spwanpoint:8} positioned 58 94 -103 run spreadplayers ~ ~ 1 300 under 319 false @s
 
 execute unless data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].tusb_race{start:1b} run clear @s
 execute unless data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].tusb_race{start:1b} run give @s minecraft:bread 16

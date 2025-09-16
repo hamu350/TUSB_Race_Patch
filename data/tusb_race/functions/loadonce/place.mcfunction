@@ -66,5 +66,5 @@ execute in minecraft:overworld positioned -1906 112 -136 run setblock ~ ~ ~ oak_
 execute in minecraft:overworld positioned -1905 112 -136 run forceload remove ~ ~
 
 
-execute in minecraft:overworld positioned -1785 113 -140 run place template tusb_race:start_set_command_block
-execute in minecraft:overworld run forceload remove -1785 -141 -1777 -133
+execute in minecraft:overworld positioned -1790 113 -140 run place template tusb_race:start_set_command_block
+execute in minecraft:overworld run forceload remove -1790 -140 -1777 -133

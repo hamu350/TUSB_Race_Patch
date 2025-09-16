@@ -103,6 +103,6 @@ execute in minecraft:the_end positioned -1377 155 9 run forceload add ~ ~ ~ ~
 # コマブロ設置のためのロード
 execute in minecraft:overworld positioned -1756 113 -137 run forceload add ~ ~
 execute in minecraft:overworld positioned -1905 112 -136 run forceload add ~ ~
-execute in minecraft:overworld run forceload add -1785 -141 -1777 -133
+execute in minecraft:overworld run forceload add -1790 -140 -1777 -133
 
 schedule function tusb_race:loadonce/place 1t
