@@ -7,7 +7,7 @@ data modify storage tusb_remake: drain_result set value false
 
 execute at @s as @e[predicate=tusb_remake:player] run function tusb_remake:skill/this
 
-execute as @e[distance=..10,type=#tusb_remake:living,limit=1] run function tusb_remake:skill/black_mage/drain/apply
+execute as @e[distance=..10,type=#tusb_remake:mob_and_player,limit=1] run function tusb_remake:skill/black_mage/drain/apply
 
 tag @e[tag=This] remove This
 

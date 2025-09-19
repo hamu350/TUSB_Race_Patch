@@ -34,3 +34,5 @@ tellraw @s {"translate": "ポイント変動条件","bold":true}
 tellraw @s {"translate": "通常世界島攻略+5 別ディメンション+10 死亡->他プレイヤーの数×-3,他プレイヤーに+3"}
 
 effect give @s glowing infinite 127
+
+tag @s add Enemy

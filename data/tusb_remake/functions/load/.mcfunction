@@ -265,7 +265,7 @@ scoreboard objectives add SneakFrequency dummy {"text":"スニーク頻度"}
 
 ### チーム
 team add FriendlyTeam
-team modify FriendlyTeam friendlyFire false
+team modify FriendlyTeam friendlyFire true
 team modify FriendlyTeam seeFriendlyInvisibles true
 team modify FriendlyTeam collisionRule never
 team modify FriendlyTeam deathMessageVisibility always
