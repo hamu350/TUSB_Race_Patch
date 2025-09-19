@@ -87,8 +87,11 @@ execute in minecraft:overworld positioned 2486 96 1443 run forceload add ~ ~ ~ ~
 # トカルトコルデ：まいみかハウス
 execute in minecraft:overworld positioned 1941 111 2919 run forceload add ~ ~ ~ ~
 
-# 煉獄：上層
-execute in minecraft:the_nether positioned -1850 192 -54 run forceload add ~ ~ ~ ~
+# トカルトコルデ：コマブロ遺跡
+execute in minecraft:overworld positioned 1549 88 1333 run forceload add ~ ~ ~ ~
+
+# ネザー：ネザーアスレ出口
+execute in minecraft:the_nether positioned -499 137 803 run forceload add ~ ~ ~ ~
 
 # エンド：奈落地帯
 execute in minecraft:the_end positioned -236 62 12 run forceload add ~ ~ ~ ~
@@ -99,6 +102,11 @@ execute in minecraft:the_end positioned -1143 65 12 run forceload add ~ ~ ~ ~
 # エンド：地獄部屋
 execute in minecraft:the_end positioned -1377 155 9 run forceload add ~ ~ ~ ~
 
+# エンド：深淵の間
+execute in minecraft:the_end run forceload add -1384 8 -1386 10
+
+# ネザーアスレ出口変更
+execute in minecraft:the_nether positioned -258 32 878 run forceload add ~ ~ ~ ~2
 
 # コマブロ設置のためのロード
 execute in minecraft:overworld positioned -1756 113 -137 run forceload add ~ ~
