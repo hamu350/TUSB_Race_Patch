@@ -11,7 +11,7 @@ execute store result storage math: in int 1 run scoreboard players operation 経
 function #math:clock
 
 data modify storage tusb_remake: _ set value ""
-execute if score SightseeingDeath Settings matches 1.. run data modify storage tusb_remake: _ set value '[{"text":"死亡回数:","color":"white","italic":false,"bold":true},{"score":{"name":"SightseeingDeath","objective":"Settings"},"color":"red"},")"]'
+execute if score SightseeingDeath Settings matches 1.. run data modify storage tusb_remake: _ set value '[{"text":" 死亡回数:","color":"white","italic":false,"bold":true},{"score":{"name":"SightseeingDeath","objective":"Settings"},"color":"red"},")"]'
 tellraw @s {"text":"= 攻略率 =","color":"white","bold":true}
 tellraw @s [{"translate":"全エリア %1$s/%2$s (%3$s.%4$s%%) %5$s経過","color":"white","bold":false,"with":[{"nbt":"conquer.count.total","storage":"tusb_remake:","bold":true,"italic":false},{"score":{"name":"MaxPortalCount","objective":"Settings"}},{"nbt":"conquer.rate.int[]","storage":"tusb_remake:","separator":""},{"nbt":"conquer.rate.cent[]","storage":"tusb_remake:","separator":""},{"translate":"%1$s時間%2$s分%3$s秒","italic":false,"bold":false,"color":"white","with":[{"nbt":"out.total_hour","storage":"math:"},{"nbt":"out.minute","storage":"math:"},{"nbt":"out.second","storage":"math:"}]}]},{"nbt":"_","storage":"tusb_remake:","interpret":true}]
 tellraw @s {"translate":"通常世界: %1$s/44 ネザー: %2$s/2 エンド: %3$s/4","color":"gray","bold":true,"with":[{"nbt":"conquer.count.skyland","storage":"tusb_remake:","color":"aqua"},{"nbt":"conquer.count.nether","storage":"tusb_remake:","color":"aqua"},{"nbt":"conquer.count.end","storage":"tusb_remake:","color":"aqua"}]}

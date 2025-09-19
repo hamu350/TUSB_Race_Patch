@@ -5,3 +5,6 @@
 
 execute store result score _ UseEnderEye run data get storage tusb_remake: conquer.count.skyland
 execute store result storage tusb_remake: conquer.count.skyland int 1 run scoreboard players add _ UseEnderEye 1
+
+# 追加： アイはめた人はポイントげっちゅ
+scoreboard players add @s RacePoint 3

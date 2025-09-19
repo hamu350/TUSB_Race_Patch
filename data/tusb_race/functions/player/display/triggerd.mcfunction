@@ -8,6 +8,9 @@ execute if score @s ShowMenu matches 1 run function tusb_remake:display/conquer
 # ステータストリガー
 execute if score @s ShowMenu matches 10 run function tusb_remake:display/job
 
+# ポイントトリガー
+execute if score @s ShowMenu matches 100 run function tusb_race:player/display/point_show
+
 # スキル変更トリガー
 execute if score @s ChangeSkillSet matches 1 run function tusb_race:player/display/skillset
 

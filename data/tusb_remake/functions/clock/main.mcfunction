@@ -75,3 +75,6 @@ execute as @e[tag=Freeze] run data merge entity @s {Motion:[0d,0d,0d]}
 
 # 追加： スニークメニュー
 execute as @a at @s run function tusb_race:tick/player_sneak
+
+# timer
+function tusb_race:time_limit/tick

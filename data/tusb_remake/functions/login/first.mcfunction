@@ -28,11 +28,12 @@ tellraw @s {"translate": "TUSB_RPへようこそ！","color": "gold"}
 tellraw @s {"translate": "職業島でスタートボタンを押すと、ゲームが開始されます。"}
 tellraw @s {"translate": "島攻略や相手プレイヤーが倒れると得られるレースポイントを一番多く集めた人が勝利となります。"}
 tellraw @s {"translate": "ゲーム開始後、クラウディア村人像前にてゲームを終了することができます。"}
+tellraw @s {"translate": "シフトを素早く3回押すことで、メニューが出てきます。"}
 tellraw @s {"translate": "※MPが経験値バーになりました。サイドバーにはポイントが表示されます。","color": "green"}
-tellraw @s {"translate": "-----------------------------------------------------"}
-tellraw @s {"translate": "ポイント変動条件","bold":true}
-tellraw @s {"translate": "通常世界島攻略+5 別ディメンション+10 死亡->他プレイヤーの数×-3,他プレイヤーに+3"}
 
 effect give @s glowing infinite 127
 
 tag @s add Enemy
+
+scoreboard players add $Max PlayerId 1
+scoreboard players operation @s PlayerId = $Max PlayerId
