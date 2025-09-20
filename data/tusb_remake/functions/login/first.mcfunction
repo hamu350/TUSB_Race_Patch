@@ -27,7 +27,7 @@ data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].tusb_race.setti
 tellraw @s {"translate": "TUSB_RPへようこそ！","color": "gold"}
 tellraw @s {"translate": "職業島でスタートボタンを押すと、ゲームが開始されます。"}
 tellraw @s {"translate": "島攻略や相手プレイヤーが倒れると得られるレースポイントを一番多く集めた人が勝利となります。"}
-tellraw @s {"translate": "ゲーム開始後、クラウディア村人像前にてゲームを終了することができます。"}
+tellraw @s {"translate": "終了条件は、5時間過ぎることとか、クラウディア村人像前にある終了ボタンを押すことです。"}
 tellraw @s {"translate": "シフトを素早く3回押すことで、メニューが出てきます。"}
 tellraw @s {"translate": "※MPが経験値バーになりました。サイドバーにはポイントが表示されます。","color": "green"}
 
