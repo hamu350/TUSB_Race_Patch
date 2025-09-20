@@ -11,6 +11,12 @@ execute if score @s ShowMenu matches 10 run function tusb_remake:display/job
 # ポイントトリガー
 execute if score @s ShowMenu matches 100 run function tusb_race:player/display/point_show
 
+# 変更点表示トリガー
+execute if score @s ShowMenu matches 1000 run function tusb_race:player/display/tips_show
+
+# 追加島表示トリガー
+execute if score @s ShowMenu matches 10000 run function tusb_race:player/display/island_show
+
 # スキル変更トリガー
 execute if score @s ChangeSkillSet matches 1 run function tusb_race:player/display/skillset
 

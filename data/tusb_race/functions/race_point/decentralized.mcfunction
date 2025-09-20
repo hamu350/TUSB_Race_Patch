@@ -4,7 +4,7 @@
 
 tag @s add PointLost
 
-# 最もポイントが低い人に+3
+# 最もポイントが低い人に+2
 scoreboard players set _ TUSB 2147483647
 scoreboard players operation _ TUSB < @a RacePoint
 execute as @a if score @s RacePoint = _ TUSB run scoreboard players add @s RacePoint 2
