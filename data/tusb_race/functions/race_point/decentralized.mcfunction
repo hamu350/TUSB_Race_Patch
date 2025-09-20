@@ -16,6 +16,7 @@ scoreboard players operation _ RacePoint *= PlayerCount RacePoint
 scoreboard players operation @s RacePoint -= _ RacePoint
 execute as @a[tag=!PointLost] if score PlayerCount RacePoint matches ..3 run scoreboard players add @s RacePoint 2
 execute as @a[tag=!PointLost] if score PlayerCount RacePoint matches 4.. run scoreboard players add @s RacePoint 1
+execute as @a[tag=PointLost] run scoreboard players remove @s RacePoint 3
 scoreboard players reset PlayerCount RacePoint
 scoreboard players reset _ RacePoint
 
