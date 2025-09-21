@@ -9,5 +9,7 @@ execute if entity @s[scores={SneakFrequency=1..}] run function tusb_race:player/
 ### プレイヤーゲーム設定
 execute unless score @s ShowMenu matches 0 run function tusb_race:player/display/triggerd
 
-### スキル変更設定
+# スキル変更トリガー
+execute if score @s ChangeSkillSet matches 1 run function tusb_race:player/display/skillset
+
 execute unless score @s SkillSetting matches 0 run function tusb_race:player/display/skilldisplay

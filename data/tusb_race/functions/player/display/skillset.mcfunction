@@ -9,6 +9,9 @@ tellraw @s ["",{"text":"≪ ","color":"#d12e59","bold": true},{"translate":"モ�
 tellraw @s ["",{"text":"≪ ","color":"#ff8080","bold": true},{"translate":"サポートスキル設定","bold": true,"clickEvent": {"action": "run_command","value": "/trigger SkillSetting set 10"}},{"text":" ≫","color":"#00ffff","bold": true}]
 tellraw @s "======================"
 function tusb_race:player/display/show_menu
+
 # スコアリセット
 scoreboard players reset @s ChangeSkillSet
 scoreboard players enable @s ChangeSkillSet
+scoreboard players reset @s SkillSetting
+scoreboard players enable @s SkillSetting

@@ -15,3 +15,5 @@ execute if score @s SkillSetting matches 10 run function tusb_remake:skill/displ
 # スコアリセット
 scoreboard players reset @s SkillSetting
 scoreboard players enable @s SkillSetting
+scoreboard players reset @s ChangeSkillSet
+scoreboard players enable @s ChangeSkillSet

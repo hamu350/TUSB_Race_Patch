@@ -17,9 +17,6 @@ execute if score @s ShowMenu matches 1000 run function tusb_race:player/display/
 # 追加島表示トリガー
 execute if score @s ShowMenu matches 10000 run function tusb_race:player/display/island_show
 
-# スキル変更トリガー
-execute if score @s ChangeSkillSet matches 1 run function tusb_race:player/display/skillset
-
 # 設定画面再表示
 function tusb_race:player/display/show_menu
 
