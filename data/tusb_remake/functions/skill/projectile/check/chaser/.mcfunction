@@ -8,13 +8,12 @@ execute store result storage score_damage: Argument.Damage double 0.01 run data 
 
 scoreboard players operation _ PotentialSkill = @s ProjectileSkill
 
-execute on origin run function tusb_remake:skill/use_damage_skill
 execute on passengers on origin at @s as @e[predicate=tusb_remake:player] run function tusb_remake:skill/owner
 
 ### リメイク：エンチェイスの範囲を拡大
 data modify storage tusb_remake: chaser_invoked set value false
-execute if entity @s[tag=Chaser1] as @e[distance=..5,tag=!Owner,sort=nearest,limit=1] at @s run function tusb_remake:skill/projectile/check/chaser/apply
-execute if entity @s[tag=Chaser2] as @e[distance=..10,tag=!Owner,sort=nearest,limit=1] at @s run function tusb_remake:skill/projectile/check/chaser/apply
+execute if entity @s[tag=Chaser1] as @e[distance=..5,tag=!Owner,tag=!This,type=#tusb_remake:mob_and_player,sort=nearest,limit=1] at @s run function tusb_remake:skill/projectile/check/chaser/apply
+execute if entity @s[tag=Chaser2] as @e[distance=..10,tag=!Owner,tag=!This,type=#tusb_remake:mob_and_player,sort=nearest,limit=1] at @s run function tusb_remake:skill/projectile/check/chaser/apply
 
 tag @e[tag=Owner] remove Owner
 

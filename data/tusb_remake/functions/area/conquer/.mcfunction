@@ -34,8 +34,8 @@ execute store result storage math: in int 1 run scoreboard players operation 経
 function #math:clock
 
 data modify storage tusb_remake: _ set value ""
-data modify storage tusb_remake: _ set value '[{"text":" 死亡回数:","color":"gray","italic":false},{"score":{"name":"SightseeingDeath","objective":"Settings"},"color":"red"},")"]'
-tellraw @a [{"translate":"攻略タイム : %1$s","italic":true,"bold":true,"color":"white","with":[{"translate":"%1$s時間%2$s分%3亡s秒","italic":false,"with":[{"nbt":"out.total_hour","storage":"math:"},{"nbt":"out.minute","storage":"math:"},{"nbt":"out.second","storage":"math:"}]}]},{"nbt":"_","storage":"tusb_remake:","interpret":true}]
+execute if score SightseeingDeath Settings matches 1.. run data modify storage tusb_remake: _ set value '[{"text":"(死亡回数:","color":"gray","italic":false},{"score":{"name":"SightseeingDeath","objective":"Settings"},"color":"red"},")"]'
+tellraw @a [{"translate":"攻略タイム : %1$s","italic":true,"bold":true,"color":"white","with":[{"translate":"%1$s時間%2$s分%3$s秒","italic":false,"with":[{"nbt":"out.total_hour","storage":"math:"},{"nbt":"out.minute","storage":"math:"},{"nbt":"out.second","storage":"math:"}]}]},{"nbt":"_","storage":"tusb_remake:","interpret":true}]
 
 # アイはめた人が誰なのかわあるように
 tellraw @a {"translate": "%sが島を攻略した！","with": [{"selector": "@s"}]}

@@ -14,7 +14,7 @@ tag @s[gamemode=!spectator,scores={Job=1..}] add Return
 ### 戻る時間を設定する
 execute store result score _ ReturnTimer run time query gametime
 scoreboard players add _ ReturnTimer 100
-scoreboard players operation @a[distance=..10,gamemode=!spectator,scores={Job=1..}] ReturnTimer = _ ReturnTimer
+scoreboard players operation @s[distance=..10,gamemode=!spectator,scores={Job=1..}] ReturnTimer = _ ReturnTimer
 
 ### スケジュール
 execute in minecraft:overworld run schedule function tusb_remake:skill/black_mage/return/schedule/ 1t

@@ -5,6 +5,6 @@
 
 
 execute on origin at @s as @e[predicate=tusb_remake:player] run function tusb_remake:skill/owner
-execute as @e[predicate=tusb_remake:player,distance=..5,tag=!Owner,tag=NearProjectile,limit=1,sort=nearest] run function tusb_remake:skill/projectile/hit
+execute as @e[type=#tusb_remake:mob_and_player,distance=..5,tag=!Owner,tag=NearProjectile,limit=1,sort=nearest] run function tusb_remake:skill/projectile/hit
 tag @e[tag=Owner] remove Owner
 kill @s

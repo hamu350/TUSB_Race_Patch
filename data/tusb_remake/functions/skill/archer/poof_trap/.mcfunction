@@ -8,6 +8,9 @@ execute at @s as @e[predicate=tusb_remake:player] run function tusb_remake:skill
 ### ニフラムトラップを召喚
 summon minecraft:arrow ~ ~ ~ {Silent:true,damage:0d,life:800s,Tags:[TypeChecked],Passengers:[{id:"minecraft:snowball",Item:{id:"minecraft:lingering_potion",Count:1b},CustomName:'"☠"',CustomNameVisible:true,Tags:[Poof,ArcherTrap,TypeChecked]}]}
 
+data modify entity @e[tag=Poof,limit=1,sort=nearest] Owner set from entity @s UUID
+
 ### ニフラムトラップの判定を有効化
 function tusb_remake:skill/archer/poof_trap/schedule/
+
 tag @e[tag=This] remove This

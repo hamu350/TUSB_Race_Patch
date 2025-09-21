@@ -10,4 +10,3 @@ execute on passengers on origin at @s as @e[predicate=tusb_remake:player] run fu
 execute as @e[distance=..6,tag=!This,tag=!Owner,tag=!This,tag=!Owner,type=#tusb_remake:mob_and_player,tag=Enemy,tag=!FallDown,nbt={OnGround:false}] at @s run function tusb_remake:skill/archer/bird_strike/hit/
 tag @e[tag=Owner] remove Owner
 data modify storage tusb_remake: _ set value true
-
