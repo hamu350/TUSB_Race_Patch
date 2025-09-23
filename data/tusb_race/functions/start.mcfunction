@@ -8,6 +8,8 @@ data modify storage tusb_race: settings.start set value 1b
 # tellraw
 title @a title {"translate": "TUSB_Race開始！！！","color": "gold","bold": true}
 
-execute as @a at @s run function tusb_remake:brazil/warp
+setworldspawn -1743 104 -137 ~
 
-setworldspawn -1786 113 -137
+execute as @a run effect clear @s
+
+execute as @a at @s run function tusb_remake:brazil/warp

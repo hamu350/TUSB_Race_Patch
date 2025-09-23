@@ -31,7 +31,10 @@ tellraw @s {"translate": "終了条件は、5時間過ぎることとか、ク�
 tellraw @s {"translate": "シフトを素早く3回押すことで、メニューが出てきます。"}
 tellraw @s {"translate": "※MPが経験値バーになりました。サイドバーにはポイントが表示されます。","color": "green"}
 
-effect give @s glowing infinite 127
+effect give @s glowing infinite 127 true
+effect give @s resistance infinite 127 true
+effect give @s instant_health infinite 127 true
+effect give @s saturation infinite 127 true
 
 tag @s add Enemy
 
