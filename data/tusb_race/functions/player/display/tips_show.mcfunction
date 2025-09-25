@@ -9,5 +9,5 @@ tellraw @s {"translate": "終了条件は、5時間過ぎることとか、ク�
 tellraw @s {"translate": "シフトを素早く3回押すことで、メニューが出てきます。"}
 tellraw @s {"translate": "攻略できる島が増えています。","color": "gold"}
 tellraw @s {"translate": "転職場には無料かつアイテムをもって向かうことができます。","color": "gold"}
-tellraw @s {"translate": "アイテムを持ち込めなかったところは持ち込めるようになっています。","color": "gold"}
+tellraw @s {"translate": "テーブルマウンテンはアイテムを持ち込めるようになっています。","color": "gold"}
 tellraw @s {"translate": "※MPが経験値バーになりました。サイドバーにはポイントが表示されます。","color": "green"}
