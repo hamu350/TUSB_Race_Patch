@@ -19,3 +19,9 @@ function tusb_race:player/mp_bar/set
 
 # 追加： ゲームスタートしていて死亡したら専用処理
 execute if data storage tusb_race: settings{start:1b} run function tusb_race:player/death/
+
+execute if data storage tusb_race: settings{start:0b} run effect give @s glowing infinite 127 true
+execute if data storage tusb_race: settings{start:0b} run effect give @s resistance infinite 127 true
+execute if data storage tusb_race: settings{start:0b} run effect give @s instant_health infinite 127 true
+execute if data storage tusb_race: settings{start:0b} run effect give @s saturation infinite 127 true
+
