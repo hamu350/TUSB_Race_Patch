@@ -24,4 +24,3 @@ execute if data storage tusb_race: settings{start:0b} run effect give @s glowing
 execute if data storage tusb_race: settings{start:0b} run effect give @s resistance infinite 127 true
 execute if data storage tusb_race: settings{start:0b} run effect give @s instant_health infinite 127 true
 execute if data storage tusb_race: settings{start:0b} run effect give @s saturation infinite 127 true
-
