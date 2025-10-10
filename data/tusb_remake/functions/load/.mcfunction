@@ -254,6 +254,7 @@ scoreboard objectives add PotentialSkill dummy "Mobに発動する可能性の�
 ### 追加： 追加スコアボード
 scoreboard objectives add RacePoint dummy "レースポイント"
 scoreboard objectives add Rank dummy "順位"
+scoreboard objectives add DeathCount deathCount "死亡回数"
 
 # メニュートリガースコア
 scoreboard objectives add _ dummy {"text":"一時変数"}
