@@ -16,7 +16,6 @@ execute in minecraft:overworld positioned 2217 208 1880 run setblock ~ ~ ~ end_p
 execute in minecraft:overworld positioned 2486 96 1443 run setblock ~ ~ ~ end_portal_frame replace
 execute in minecraft:overworld positioned 1941 111 2919 run setblock ~ ~ ~ end_portal_frame replace
 execute in minecraft:overworld positioned 1549 88 1333 run setblock ~ ~ ~ end_portal_frame replace
-execute in minecraft:the_nether positioned -499 137 803 run setblock ~ ~ ~ minecraft:end_portal_frame
 execute in minecraft:the_end positioned -236 62 12 run setblock ~ ~ ~ end_portal_frame replace
 execute in minecraft:the_end positioned -1143 65 12 run setblock ~ ~ ~ end_portal_frame replace
 execute in minecraft:the_end positioned -1377 155 9 run setblock ~ ~ ~ end_portal_frame replace
@@ -56,7 +55,6 @@ execute in minecraft:overworld positioned 2217 208 1880 run forceload remove ~ ~
 execute in minecraft:overworld positioned 2486 96 1443 run forceload remove ~ ~ ~ ~
 execute in minecraft:overworld positioned 1941 111 2919 run forceload remove ~ ~ ~ ~
 execute in minecraft:overworld positioned 1549 88 1333 run forceload remove ~ ~ ~ ~
-execute in minecraft:the_nether positioned -499 137 803 run forceload remove ~ ~ ~ ~
 execute in minecraft:the_end positioned -236 62 12 run forceload remove ~ ~ ~ ~
 execute in minecraft:the_end positioned -1143 65 12 run forceload remove ~ ~ ~ ~
 execute in minecraft:the_end positioned -1377 155 9 run forceload remove ~ ~ ~ ~

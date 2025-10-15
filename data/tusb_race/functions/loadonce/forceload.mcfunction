@@ -90,9 +90,6 @@ execute in minecraft:overworld positioned 1941 111 2919 run forceload add ~ ~ ~ 
 # トカルトコルデ：コマブロ遺跡
 execute in minecraft:overworld positioned 1549 88 1333 run forceload add ~ ~ ~ ~
 
-# ネザー：ネザーアスレ出口
-execute in minecraft:the_nether positioned -499 137 803 run forceload add ~ ~ ~ ~
-
 # エンド：奈落地帯
 execute in minecraft:the_end positioned -236 62 12 run forceload add ~ ~ ~ ~
 
