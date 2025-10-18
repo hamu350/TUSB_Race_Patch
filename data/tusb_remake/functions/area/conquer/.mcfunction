@@ -3,7 +3,7 @@
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.
 
-execute if predicate tusb_remake:area/nether run function tusb_remake:area/conquer/nether
+execute if dimension minecraft:the_nether run function tusb_remake:area/conquer/nether
 execute if predicate tusb_remake:area/end run function tusb_remake:area/conquer/end
 execute if predicate tusb_remake:area/skyland run function tusb_remake:area/conquer/skyland
 execute if predicate tusb_remake:area/underworld run function tusb_remake:area/conquer/underworld

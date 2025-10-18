@@ -10,7 +10,14 @@ playsound minecraft:entity.lightning_bolt.thunder master @a[distance=..32] ~ ~ ~
 particle minecraft:item minecraft:sunflower ~ ~2 ~ 0 0.1 0 2 30 force @a[distance=..64]
 particle crit ~ ~4 ~ 0.1 2 0.1 0.0 90 force
 
-execute if entity @s[type=player] store result storage score_damage: Argument int 1 run data get storage tusb_race: Argument 1
+### 威力を設定
+execute as @a[tag=Owner] if score @s ActivatedSkill matches 5220 run data modify storage score_damage: Argument set value {Damage:150.00,DamageType:"Projectile"}
+execute as @a[tag=Owner] if score @s ActivatedSkill matches 5221 run data modify storage score_damage: Argument set value {Damage:250.00,DamageType:"Projectile"}
+execute as @a[tag=Owner] if score @s ActivatedSkill matches 5222..5229 run data modify storage score_damage: Argument set value {Damage:400.00,DamageType:"Projectile"}
+
+execute if entity @s[predicate=tusb_remake:player] as @a[tag=Owner] if score @s[predicate=tusb_remake:player] ActivatedSkill matches 5220 run data modify storage score_damage: Argument set value {Damage:75.00,DamageType:"Projectile"}
+execute if entity @s[predicate=tusb_remake:player] as @a[tag=Owner] if score @s[predicate=tusb_remake:player] ActivatedSkill matches 5221 run data modify storage score_damage: Argument set value {Damage:150.00,DamageType:"Projectile"}
+execute if entity @s[predicate=tusb_remake:player] as @a[tag=Owner] if score @s[predicate=tusb_remake:player] ActivatedSkill matches 5222..5229 run data modify storage score_damage: Argument set value {Damage:250.00,DamageType:"Projectile"}
 
 ### ダメージを与える
 function score_damage:api/attack
