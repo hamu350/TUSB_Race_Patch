@@ -14,7 +14,7 @@ scoreboard players operation @s MP = @s MPMax
 function tusb_race:player/mp_bar/set
 
 ### 最大体力計算 = min(MPMax / 8, 50)
-execute store result storage tusb_remake: _ int 0.125 run scoreboard players get @s MPMax
+execute store result storage tusb_remake: _ int 0.25 run scoreboard players get @s MPMax
 execute store result score @s HPMax run data get storage tusb_remake: _
 scoreboard players set @s[scores={HPMax_min=51..}] HPMax 50
 ### MP回復間隔 = 100 - Level
