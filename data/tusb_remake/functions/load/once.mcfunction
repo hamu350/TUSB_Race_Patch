@@ -64,11 +64,11 @@ scoreboard objectives add Hour dummy
 # s,m,hをtickで割るときの値(scoreboard operation)
 scoreboard players set $Time_to_Sec Timer 20
 scoreboard players set $Time_to_Min Timer 1200
-scoreboard players set $Time_to_Hour Timer 72000
-scoreboard players set Time Timer 72000
+scoreboard players set $Time_to_Hour Timer 3600
+scoreboard players set Time Timer 3600
 
-scoreboard players set Time Timer 360000
-scoreboard players set Max_Time Timer 360000
+scoreboard players set Time Timer 3600
+scoreboard players set Max_Time Timer 3600
 
 # タイマー用ボスバーどーん
 bossbar add tusb_race:timer ""
