@@ -74,3 +74,4 @@ scoreboard players set Max_Time Timer 3600
 bossbar add tusb_race:timer ""
 bossbar set tusb_race:timer visible true
 bossbar set tusb_race:timer style notched_10
+bossbar set tusb_race:timer color red

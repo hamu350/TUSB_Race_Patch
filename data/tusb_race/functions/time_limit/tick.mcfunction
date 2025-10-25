@@ -5,8 +5,8 @@
 # 止まってる時に動いてたらしいが、どうなってるんだ
 function tusb_race:time_limit/timer
 
-# ボスバー色チェン
-function tusb_race:time_limit/bossbar_color
+# # ボスバー色チェン
+# function tusb_race:time_limit/bossbar_color
 
 # ボスバーの名前変えます
 function tusb_race:time_limit/bossbar_name_change
