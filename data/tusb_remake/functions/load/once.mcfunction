@@ -75,3 +75,7 @@ bossbar add tusb_race:timer ""
 bossbar set tusb_race:timer visible true
 bossbar set tusb_race:timer style notched_10
 bossbar set tusb_race:timer color red
+
+# スポナー破壊検知
+scoreboard objectives add MineSpawner minecraft.mined:minecraft.spawner
+scoreboard objectives add SpawnerPoint dummy

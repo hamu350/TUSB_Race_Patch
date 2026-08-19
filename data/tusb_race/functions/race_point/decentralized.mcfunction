@@ -4,13 +4,7 @@
 
 tag @s add PointLost
 
-# 最もポイントが低い人に+2
-scoreboard players set _ TUSB 2147483647
-scoreboard players operation _ TUSB < @a RacePoint
-execute as @a[tag=!PointLost] if score @s RacePoint = _ TUSB run scoreboard players add @s RacePoint 2
-# 死んだ人以外に+2
-execute as @a[tag=!PointLost] run scoreboard players add @s RacePoint 2
-scoreboard players reset PlayerCount RacePoint
-scoreboard players reset _ RacePoint
+# 死んだ人を-5
+execute as @s[tag=PointLost] run scoreboard players remove @s RacePoint 3
 
 tag @s remove PointLost

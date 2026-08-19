@@ -73,6 +73,9 @@ execute as @a[scores={UseFireworkRocket=1..}] run function tusb_remake:player/us
 # NoAIの停止 Freeze おのれもやん => NoAIでも動くやつがいるみたいなのだったかも
 execute as @e[tag=Freeze] run data merge entity @s {Motion:[0d,0d,0d]}
 
+# block_spawner 破壊検知
+execute as @a[scores={MineSpawner=1..}] at @s run function tusb_race:spawner/block_mined
+
 # 追加： スニークメニュー
 execute as @a at @s run function tusb_race:tick/player_sneak
 
