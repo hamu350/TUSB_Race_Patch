@@ -3,11 +3,10 @@
 #
 
 tellraw @s {"translate": ""}
-tellraw @s {"translate": "攻略ポイント","bold": true,"color": "white"}
-tellraw @s {"translate": "通常世界+3 地下世界+6 ガリバーランド+10","color": "white"}
-tellraw @s {"translate": "テーブルマウンテン+6 クラウディア+6","color": "white"}
-tellraw @s {"translate": "トカルトコルデ+12 煉獄+30 エンド+30","color": "white"}
-tellraw @s {"translate": ""}
-tellraw @s {"translate": "プレイヤーデスポイント","bold": true,"color": "white"}
-tellraw @s {"translate": "・死亡しておらず、最もポイントが低い人に+2","color": "white"}
-tellraw @s {"translate": "・死亡した人以外に+2","color": "white"}
+tellraw @s {"translate": "ポイント変動条件","bold": true,"color": "white"}
+tellraw @s {"translate": "・通常世界攻略　　　　　: +3","color": "white"}
+tellraw @s {"translate": "・別ディメンション攻略　: +20","color": "white"}
+tellraw @s {"translate": "・擬態スポナー破壊　　　: +1","color": "white"}
+tellraw @s {"translate": "・黒曜石スポナー破壊　　: +3","color": "white"}
+tellraw @s {"translate": "・Adv.スポナー       　: +1","color": "white"}
+tellraw @s {"translate": "・死亡時　　　　　　　　: -10","color": "red"}

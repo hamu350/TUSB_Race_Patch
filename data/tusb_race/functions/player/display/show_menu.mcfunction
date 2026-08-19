@@ -2,8 +2,6 @@
 #
 #
 
-tellraw @s [{"translate":"[INFO] ステータス確認やスキル設定ができます。"}]
-
 # スコアリセット
 scoreboard players enable @s ChangeSkillSet
 scoreboard players enable @s SkillSetting

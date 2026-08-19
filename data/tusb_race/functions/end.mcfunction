@@ -35,3 +35,5 @@ scoreboard players reset 2nd RacePoint
 scoreboard players reset 3rd RacePoint
 
 data modify storage tusb_race: settings.start set value false
+
+tp @a -1911.0 114.0 -136.0

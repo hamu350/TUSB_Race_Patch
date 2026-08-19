@@ -79,5 +79,8 @@ execute as @a[scores={MineSpawner=1..}] at @s run function tusb_race:spawner/blo
 # 追加： スニークメニュー
 execute as @a at @s run function tusb_race:tick/player_sneak
 
+# 終了条件：300pt
+execute as @a[scores={RacePoint=300..},limit=1] at @s run function tusb_race:end
+
 # timer
 function tusb_race:time_limit/tick
