@@ -15,6 +15,6 @@ execute in minecraft:overworld run schedule function tusb_remake:brazil/apply_si
 # 指定した位置にTP
 execute if data storage tusb_race: settings{start:1b} run function tusb_race:brazil/tp
 
-execute unless data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].tusb_race{start:1b} run function tusb_race:brazil/give
+execute unless data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].tusb_race{start:1b} run function tusb_race:item/give
 
 execute if data storage tusb_race: settings{start:1b} run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].tusb_race.start set value 1b
