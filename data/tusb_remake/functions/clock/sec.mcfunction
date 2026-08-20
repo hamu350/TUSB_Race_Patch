@@ -82,4 +82,6 @@ execute as @e[tag=CanFire] at @s positioned ~-0.5 ~ ~-0.5 run fill ~ ~ ~ ~1 ~1 ~
 ## エリア境界不正侵入(バリアめり込み)防止
 execute as @a[gamemode=!spectator] at @s if block ~ 0 ~ minecraft:barrier if blocks ~ 0 ~ ~ 254 ~ ~ ~1 ~ all run kill @s
 
+execute as @a unless entity @s[nbt={ActiveEffects:[{Id:24}]}] run effect give @s glowing infinite 127 true
+
 execute in minecraft:overworld run schedule function tusb_remake:clock/sec 1s
