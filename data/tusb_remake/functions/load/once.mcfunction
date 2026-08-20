@@ -70,6 +70,11 @@ scoreboard players set $Time_to_Sec Timer 20
 scoreboard players set $Time_to_Min Timer 1200
 scoreboard players set $Time_to_Hour Timer 72000
 
+scoreboard players set Time Timer 144000
+scoreboard players set Max_Time Timer 144000
+
+scoreboard players set RaceEndPoint SpawnerPoint 300
+
 # タイマー用ボスバーどーん
 bossbar add tusb_race:timer ""
 bossbar set tusb_race:timer visible true
