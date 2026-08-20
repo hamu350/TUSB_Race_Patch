@@ -67,7 +67,7 @@ execute in minecraft:overworld positioned -1756 113 -137 run forceload remove ~ 
 
 execute in minecraft:overworld positioned -1905 113 -136 run setblock ~ ~ ~ oak_button[face=floor,facing=east]
 execute in minecraft:overworld positioned -1905 112 -136 run setblock ~ ~ ~ command_block[facing=up]{powered:0b,auto:0b,Command:"function tusb_race:end"} replace
-execute in minecraft:overworld positioned -1906 112 -136 run setblock ~ ~ ~ oak_sign[rotation=4]{Text1:'{"text":""}',Text2:'{"text":"\\u30dc\\u30bf\\u30f3\\u3092\\u62bc\\u3059\\u3068","color":"white"}',Text3:'{"text":"\\u7d42\\u4e86\\u3067\\u3059","color":"white"}'} replace
+execute in minecraft:overworld positioned -1906 112 -136 run setblock ~ ~ ~ oak_sign[rotation=4]{Text1:'{"text":""}',Text2:'{"text":"\\u30dc\\u30bf\\u30f3\\u3092\\u62bc\\u3059\\u3068","color":"white"}',Text3:'{"text":"\\u5f37\\u5236\\u7d42\\u4e86\\u3059\\u308b","color":"red"}'} replace
 execute in minecraft:overworld positioned -1905 112 -136 run forceload remove ~ ~
 
 execute in minecraft:overworld positioned -1790 113 -140 run place template tusb_race:start_set_command_block
