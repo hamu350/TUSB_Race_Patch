@@ -14,12 +14,12 @@ execute as @a run scoreboard players operation 1st RacePoint > @s RacePoint
 execute as @a run scoreboard players operation @s RacePoint -= 1st RacePoint
 execute as @a[scores={RacePoint=0}] run scoreboard players set @s Rank 1
 
+execute as @a[scores={Rank=0}] run scoreboard players operation @s RacePoint = @s TUSB 
 execute as @a[scores={Rank=0}] run scoreboard players operation 2nd RacePoint > @s RacePoint
 execute as @a[scores={Rank=0}] run scoreboard players operation @s RacePoint -= 2nd RacePoint
 execute as @a[scores={Rank=0,RacePoint=0}] run scoreboard players set @s Rank 2
 
-execute as @a[scores={Rank=0}] run scoreboard players operation @s RacePoint = @s TUSB 
-
+execute as @a[scores={Rank=0}] run scoreboard players operation @s RacePoint = @s TUSB
 execute as @a[scores={Rank=0}] run scoreboard players operation 3rd RacePoint > @s RacePoint
 execute as @a[scores={Rank=0}] run scoreboard players operation @s RacePoint -= 3rd RacePoint
 execute as @a[scores={Rank=0,RacePoint=0}] run scoreboard players set @s Rank 3
