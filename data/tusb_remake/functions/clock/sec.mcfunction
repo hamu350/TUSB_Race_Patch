@@ -84,4 +84,8 @@ execute as @a[gamemode=!spectator] at @s if block ~ 0 ~ minecraft:barrier if blo
 
 execute as @a unless entity @s[nbt={ActiveEffects:[{Id:24}]}] run effect give @s glowing infinite 127 true
 
+execute as @a[predicate=tusb_race:outer_legend,tag=!OuterLegend] run function tusb_race:item/outer_legend
+
+execute as @a[predicate=tusb_race:outer_legend,tag=OuterLegend] run scoreboard players add @s RacePoint 1
+
 execute in minecraft:overworld run schedule function tusb_remake:clock/sec 1s

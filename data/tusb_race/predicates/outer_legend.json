@@ -1,0 +1,22 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:player",
+    "equipment": {
+      "head": {
+        "nbt": "{display: {Name: '{\"text\":\"§5§km§9§ky§b§kt§a§kh§e§ki§6§kc§c§ka§d§kl§f§l§n アウターレジェンド §d§km§c§ky§6§kt§e§kh§a§ki§b§kc§9§ka§5§kl§r\"}'}}"
+      },
+      
+      "chest": {
+        "nbt": "{display: {Name: '{\"text\":\"§5§km§9§ky§b§kt§a§kh§e§ki§6§kc§c§ka§d§kl§f§l§n アウターレジェンド §d§km§c§ky§6§kt§e§kh§a§ki§b§kc§9§ka§5§kl§r\"}'}}"
+      },
+      "legs": {
+        "nbt": "{display: {Name: '{\"text\":\"§5§km§9§ky§b§kt§a§kh§e§ki§6§kc§c§ka§d§kl§f§l§n アウターレジェンド §d§km§c§ky§6§kt§e§kh§a§ki§b§kc§9§ka§5§kl§r\"}'}}"
+      },
+      "feet": {
+        "nbt": "{display: {Name: '{\"text\":\"§5§km§9§ky§b§kt§a§kh§e§ki§6§kc§c§ka§d§kl§f§l§n アウターレジェンド §d§km§c§ky§6§kt§e§kh§a§ki§b§kc§9§ka§5§kl§r\"}'}}"
+      }
+    }
+  }
+}

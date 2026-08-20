@@ -22,3 +22,4 @@ tag @s[tag=ReRaise] add CastRaise
 tag @s[tag=ReRaise] remove ReRaise
 
 execute if data storage tusb_race: settings{start:1b} run tellraw @a {"translate": "%sは死んでしまった...","color": "dark_red","with": [{"selector": "@s"}]}
+execute if data storage tusb_race: settings{start:1b} as @a[tag=OuterLegend] run scoreboard players remove @s RacePoint 300
