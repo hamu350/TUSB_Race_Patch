@@ -80,7 +80,7 @@ execute as @a[scores={MineSpawner=1..},gamemode=!survival] at @s run function tu
 execute as @a at @s run function tusb_race:tick/player_sneak
 
 # 終了条件：300pt
-execute as @a[scores={RacePoint=300..},limit=1] at @s if data storage tusb_race: settings{start:true} run function tusb_race:end
+execute as @a[scores={RacePoint=500..},limit=1] at @s if data storage tusb_race: settings{start:true} run function tusb_race:end
 
 # timer
 function tusb_race:time_limit/tick

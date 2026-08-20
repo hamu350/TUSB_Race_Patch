@@ -60,15 +60,15 @@ scoreboard objectives add Timer dummy
 scoreboard objectives add Sec dummy
 scoreboard objectives add Min dummy
 scoreboard objectives add Hour dummy
-
+# total time計測用スコア(主に時間経過で強くなる系に反映するため)
+# playtimeは実プレイヤーしか入らないのである！
+scoreboard objectives add Spend_Time dummy
+scoreboard objectives add Spend_Hour dummy
+scoreboard players set Time Spend_Hour 0
 # s,m,hをtickで割るときの値(scoreboard operation)
 scoreboard players set $Time_to_Sec Timer 20
 scoreboard players set $Time_to_Min Timer 1200
-scoreboard players set $Time_to_Hour Timer 3600
-scoreboard players set Time Timer 3600
-
-scoreboard players set Time Timer 3600
-scoreboard players set Max_Time Timer 3600
+scoreboard players set $Time_to_Hour Timer 72000
 
 # タイマー用ボスバーどーん
 bossbar add tusb_race:timer ""
