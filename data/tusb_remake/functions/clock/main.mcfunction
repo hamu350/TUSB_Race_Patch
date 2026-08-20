@@ -74,13 +74,15 @@ execute as @a[scores={UseFireworkRocket=1..}] run function tusb_remake:player/us
 execute as @e[tag=Freeze] run data merge entity @s {Motion:[0d,0d,0d]}
 
 # block_spawner 破壊検知
-execute as @a[scores={MineSpawner=1..}] at @s run function tusb_race:spawner/block_mined
+execute as @a[scores={MineSpawner=1..},gamemode=!survival] at @s run function tusb_race:spawner/block_mined
 
 # 追加： スニークメニュー
 execute as @a at @s run function tusb_race:tick/player_sneak
 
 # 終了条件：300pt
-execute as @a[scores={RacePoint=300..},limit=1] at @s run function tusb_race:end
+execute as @a[scores={RacePoint=300..},limit=1] at @s if data storage tusb_race: settings{start:true} run function tusb_race:end
 
 # timer
 function tusb_race:time_limit/tick
+
+execute as @a[scores={MineSpawner=1..}] run scoreboard players reset @s MineSpawner
