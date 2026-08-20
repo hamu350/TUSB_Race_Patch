@@ -10,7 +10,7 @@ give @s minecraft:bow{RepairCost: 1000000000, Damage: 0, display: {Name: '{"text
 give @s minecraft:diamond_pickaxe{RepairCost: 1000000, Damage: 0, Enchantments: [{lvl: 3s, id: "minecraft:efficiency"}]}
 give @s minecraft:ender_pearl 16
 give @s minecraft:guardian_spawn_egg{RepairCost: 1000000000, HideFlags: 16, display: {Lore: ['{"text":"§rスキルエッグ一式が入っている。"}'], Name: '{"text":"§dスキルエッグセット"}'}, Enchantments: [], EntityTag: {DeathTime: 19s, Silent: 1b, DeathLootTable: "usb:signs/skillegg", id: "minecraft:guardian", NoAI: 1b, Tags: ["RewardEgg", "TypeChecked"], ActiveEffects: [{Duration: 100, Id: 7b, Amplifier: 5b, ShowParticles: 0b}, {Duration: 100, Id: 14b, Amplifier: 0b, ShowParticles: 0b}]}, CanPlaceOn: ["#minecraft:all"]} 64
-give @s minecraft:elytra{Damage: 0, RepairCost: 1000000, Unbreakable:1b}
+give @s minecraft:elytra{RepairCost: 1000000000}
 give @s minecraft:end_crystal{AttributeModifiers:[{Name:"wax100",Amount:2d,Operation:0,UUID:[I;0,1,0,1],Slot:"mainhand",AttributeName:"generic.max_health"},{Name:"wax100",Amount:2d,Operation:0,UUID:[I;0,2,0,1],Slot:"offhand",AttributeName:"generic.movement_speed"}],HideFlags:60,display:{Name:'{"text":"§e§lエストレーヤ"}'}} 1
 give @s minecraft:arrow 64
 give @s minecraft:white_wool 64
@@ -22,5 +22,6 @@ item replace entity @s armor.head with minecraft:diamond_helmet{RepairCost: 1000
 item replace entity @s armor.chest with minecraft:diamond_chestplate{RepairCost: 1000000, Damage: 0, Enchantments: [{lvl: 3s, id: "minecraft:protection"}]}
 item replace entity @s armor.legs with minecraft:diamond_leggings{RepairCost: 1000000, Damage: 0, Enchantments: [{lvl: 3s, id: "minecraft:protection"}]}
 item replace entity @s armor.feet with minecraft:diamond_boots{RepairCost: 1000000, Damage: 0, Enchantments: [{lvl: 3s, id: "minecraft:protection"}]}
+give @s minecraft:diamond_axe{RepairCost: 1000000, Damage: 0, Enchantments: [{lvl: 3s, id: "minecraft:efficiency"}]}
 give @s minecraft:tipped_arrow{CustomPotionEffects: [{ShowParticles: 1b, Duration: 20, Id: 6b, Amplifier: 29b}], display:{Name: '{"text":"§8ロスト・オブ・ライブズ(絶対的即死)"}'}} 4
 give @s minecraft:splash_potion{CustomPotionEffects: [{ShowParticles: 1b, Duration: 20, Id: 6b, Amplifier: 29b}], display:{Name: '{"text":"§8ロスト・オブ・ライブズ(絶対的即死)"}'}} 1
