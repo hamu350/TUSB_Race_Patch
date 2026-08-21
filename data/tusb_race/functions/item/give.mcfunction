@@ -23,5 +23,3 @@ item replace entity @s armor.chest with minecraft:diamond_chestplate{RepairCost:
 item replace entity @s armor.legs with minecraft:diamond_leggings{RepairCost: 1000000, Damage: 0, Enchantments: [{lvl: 3s, id: "minecraft:protection"}]}
 item replace entity @s armor.feet with minecraft:diamond_boots{RepairCost: 1000000, Damage: 0, Enchantments: [{lvl: 3s, id: "minecraft:protection"}]}
 give @s minecraft:diamond_axe{RepairCost: 1000000, Damage: 0, Enchantments: [{lvl: 3s, id: "minecraft:efficiency"}]}
-give @s minecraft:tipped_arrow{CustomPotionEffects: [{ShowParticles: 1b, Duration: 20, Id: 6b, Amplifier: 29b}], display:{Name: '{"text":"§8ロスト・オブ・ライブズ(絶対的即死)"}'}} 4
-give @s minecraft:splash_potion{CustomPotionEffects: [{ShowParticles: 1b, Duration: 20, Id: 6b, Amplifier: 29b}], display:{Name: '{"text":"§8ロスト・オブ・ライブズ(絶対的即死)"}'}} 1
