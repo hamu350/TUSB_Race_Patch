@@ -72,3 +72,6 @@ execute in minecraft:overworld positioned -1905 112 -136 run forceload remove ~ 
 
 execute in minecraft:overworld positioned -1790 113 -140 run place template tusb_race:start_set_command_block
 execute in minecraft:overworld run forceload remove -1790 -140 -1777 -133
+
+# やりなおし
+forceload add -1923 -88 -1904 -69
