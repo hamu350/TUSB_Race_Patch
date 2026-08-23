@@ -84,3 +84,6 @@ bossbar set tusb_race:timer color red
 # スポナー破壊検知
 scoreboard objectives add MineSpawner minecraft.mined:minecraft.spawner
 scoreboard objectives add SpawnerPoint dummy
+
+scoreboard players set $10 SpawnerPoint 100
+scoreboard players set $PointLost SpawnerPoint 80
