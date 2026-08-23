@@ -21,5 +21,8 @@ tag @s[tag=Doom] remove Doom
 tag @s[tag=ReRaise] add CastRaise
 tag @s[tag=ReRaise] remove ReRaise
 
-execute if data storage tusb_race: settings{start:1b} run tellraw @a {"translate": "%sは死んでしまった...","color": "dark_red","with": [{"selector": "@s"}]}
-execute if data storage tusb_race: settings{start:1b} as @a[tag=OuterLegend] run scoreboard players remove @s RacePoint 300
+# effect付与
+effect give @s resistance 5 127
+effect give @s glowing infinite 127 true
+
+execute if data storage tusb_race: settings{start:1b} run function tusb_race:player/death/

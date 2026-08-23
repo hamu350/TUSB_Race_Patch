@@ -2,8 +2,7 @@
 #
 # 死亡時処理
 
-function tusb_race:race_point/decentralized
+execute as @s[tag=!OuterLegend] run function tusb_race:race_point/decentralized
 
-# effect付与
-effect give @s resistance 5 127
-effect give @s glowing infinite 127 true
+tellraw @a {"translate": "%sは死んでしまった...","color": "dark_red","with": [{"selector": "@s"}]}
+execute as @s[tag=OuterLegend] run scoreboard players remove @s RacePoint 300
